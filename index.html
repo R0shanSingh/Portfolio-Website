@@ -12,36 +12,36 @@
 <body>
     <header>
         <div id="logo-section">
-            <span id="logo">
-                <h2>Roshan Singh</h2>
+            <span class="logo">
+                <img src="./images/logo.png" alt="">
             </span>
-            <span id="day-night-toggle-button">
-                <button id="day">day</button>
-                <button id="night">night</button>
+            <span id="toggle-button-section">
+                <button id="day-night"><i class="fa-regular fa-sun fa-xl"></i> &#124; <i class="fa-regular fa-moon fa-xl"></i></button>
             </span>
         </div>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="home">
+        <span class="background-image"></span>
         <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm Roshan Kr. Singh.</p>
+        <p>Hello! I'm Roshan Kr. Singh</p>
         <div class="profile-image-container">
-            <img src="images/user.png" alt="Profile Image" class="profile-image">
+            <img src="images/profile.jpg" alt="Profile Image" class="profile-image">
         </div>
         <div class="social-icons">
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
         </div>
         <a href="" class="download-resume-button" download>Download Resume</a>
     </main>
@@ -50,52 +50,71 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I am [Your Name], a [Your Profession]. I have [X] years of experience in [Your Field]. I am passionate about [Your Passion] and enjoy working on projects that involve [Your Interests].</p>
+                <p>Hello! I am Roshan Kumar Singh, a passionate technology enthusiast. I'm currently diving deep into the worlds of data structures and algorithms (DSA), web development, and AI tools. Although I am at the beginning of my journey, my curiosity and eagerness to learn drive me forward.....</p>
                 <button class="read-more-button">Read More</button>
             </div>
             <div class="about-image-container">
-                <img src="images/user.png" alt="About Profile Image" class="about-image">
+                <img src="images/profile.jpg" alt="About Profile Image" class="about-image">
             </div>
         </div>
     </section>
 
     <section id="skills">
+        <span class="background-image"></span>
         <h2>My Skills</h2>
         <div class="skills-container">
             <div class="skill">
                 <div class="skill-name">HTML <i class="fa-brands fa-html5 fa-xl"></i></div>
                 <div class="progress-bar" data-progress="90">
-                    <div class="progress">90% </div>
+                    <div class="progress">90 % </div>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-name">CSS <i class="fa-brands fa-css3-alt fa-xl"></i></div>
                 <div class="progress-bar" data-progress="80">
-                    <div class="progress">80% </div>
+                    <div class="progress">80 % </div>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-name">JavaScript <i class="fa-brands fa-js fa-xl"></i></div>
                 <div class="progress-bar" data-progress="70">
-                    <div class="progress">70% </div>
+                    <div class="progress">70 % </div>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-name">Laravel <i class="fa-brands fa-laravel fa-xl"></i></div>
                 <div class="progress-bar" data-progress="75">
-                    <div class="progress">75% </div>
+                    <div class="progress">75 % </div>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-name">PhP <i class="fa-brands fa-php fa-xl"></i></div>
                 <div class="progress-bar" data-progress="65">
-                    <div class="progress">65% </div>
+                    <div class="progress">65 % </div>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-name">Java <i class="fa-brands fa-java fa-xl"></i></div>
                 <div class="progress-bar" data-progress="60">
-                    <div class="progress">60% </div>
+                    <div class="progress">60 % </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">C <i class="fa-solid fa-c fa-xl"></i></div>
+                <div class="progress-bar" data-progress="80">
+                    <div class="progress">80 % </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">DSA <i class="fa-solid fa-brain fa-xl"></i></div>
+                <div class="progress-bar" data-progress="65">
+                    <div class="progress">65 % </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">DBMS <i class="fa-solid fa-database fa-xl"></i></div>
+                <div class="progress-bar" data-progress="70">
+                    <div class="progress">70 % </div>
                 </div>
             </div>
         </div>
@@ -105,26 +124,148 @@
         <h2>Certifications</h2>
         <div class="certification-cards">
             <div class="certification-card">
+                <span id="certificate-1"></span>
                 <h3>Google It Automation with Python</h3>
-                <p>Associated with Google and coursera</p>
-                <a href="certificate1.pdf" class="view-certificate-button" target="_blank">View Certificate</a>
+                <p>Associated with <br>Google and coursera</p>
+                <a href="https://coursera.org/share/4e80bb221a63c92c873933f9f2f604d8" class="view-certificate-button" target="_blank">View Certificate</a>
             </div>
             <div class="certification-card">
-                <h3>PhP Certification</h3>
-                <p>Associated with Sololearn</p>
-                <a href="certificate2.pdf" class="view-certificate-button" target="_blank">View Certificate</a>
+                <span id="certificate-2"></span>
+                <h3>PhP <br>Certification</h3>
+                <p>Associated with <br>Sololearn</p>
+                <a href="./certificates/fd5a301b-35ee-4d06-b595-de0fc3abccb8 (1).png" class="view-certificate-button" target="_blank">View Certificate</a>
             </div>
             <div class="certification-card">
-                <h3>Frontend Development</h3>
-                <p>Associated with Techo India Hooghly (MAKAUT)</p>
-                <a href="certificate3.pdf" class="view-certificate-button" target="_blank">View Certificate</a>
+                <span id="certificate-3"></span>
+                <h3>Frontend Development Using Html, Css & JS</h3>
+                <p>Associated with <br>Techo India Hooghly</p>
+                <a href="./certificates/ROSHAN KUMAR SINGH.pdf" class="view-certificate-button" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <div class="certification-cards">
+            <div class="certification-card service-card">
+                <span id="service-logo"><i class="fa-solid fa-pen-nib fa-2xl"></i></span>
+                <h3>UI/UX Design</h3>
+                <p>Enhance user experience with our UI/UX design services. We create visually appealing, user-friendly interfaces that align with your brand and engage users effectively. From research to prototyping, we focus on delivering designs that meet your specific needs.</p>
+                <a href="" class="view-certificate-button">Read More</a>
+            </div>
+            <div class="certification-card service-card">
+                <span id="service-logo"><i class="fa-solid fa-code fa-2xl"></i></span>
+                <h3>Web Development</h3>
+                <p>Our web development services provide responsive, secure, and scalable websites. Whether it's an e-commerce site or a custom web application, we use the latest technologies to ensure a seamless experience across all devices, tailored to your business goals.</p>
+                <a href="" class="view-certificate-button">Read More</a>
+            </div>
+            <div class="certification-card service-card">
+                <span id="service-logo"><i class="fa-solid fa-database fa-2xl"></i></span>
+                <h3>Databases</h3>
+                <p>Optimize your data management with our database services. We design and manage robust systems that ensure data integrity and accessibility. Whether you need relational or NoSQL databases, we provide solutions that support your business's data requirements.</p>
+                <a href="" class="view-certificate-button">Read More</a>
             </div>
         </div>
     </section>
 
-    <section id="projects"></section>
-    <section id="contact"></section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="certification-cards">
+            <div class="project-card" id="p-card-1">
+                <div class="project-content">
+                    <h3>Shopping Website</h3>
+                    <p>An Ecommerce Shopping Website created using HTML CSS JavaScript ,PHP and Mysql.</p>
+                    <a href="https://github.com" class="view-certificate-button" target="_blank"><i class="fa-brands fa-github fa-lg"></i> &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
+                </div>
+            </div>
+            <div class="project-card" id="p-card-1">
+                <div class="project-content">
+                    <h3>Digital Fittness Platform</h3>
+                    <p> A digital fitness hub for fitness enthusiasts created using HTML, CSS, JavaScript and PHP-Laravel.</p>
+                    <a href="https://github.com" class="view-certificate-button" target="_blank"><i class="fa-brands fa-github fa-lg"></i> &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Blog Post Website</h3>
+                    <p>A blog post website design focused on animals and pets lovers created using Html, Css</p>
+                    <a href="https://github.com" class="view-certificate-button" target="_blank"><i class="fa-brands fa-github fa-lg"></i> &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content" >
+                    <h3>Portfolio Website</h3>
+                    <p>A Personal Portfolio Website created using html and css.</p>
+                    <a href="https://github.com" class="view-certificate-button" target="_blank"><i class="fa-brands fa-github fa-lg"></i> &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Password Manager</h3>
+                    <p>A Password Manager website to manage your passwords of different accounts created using html css javascript and mysql</p>
+                    <a href="https://github.com" class="view-certificate-button" target="_blank"><i class="fa-brands fa-github fa-lg"></i> &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>To-do website</h3>
+                    <p>A to do website to manage your your schedule created using html css javascript and mysql.</p>
+                    <a href="https://github.com" class="view-certificate-button" target="_blank"><i class="fa-brands fa-github fa-lg"></i> &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer></footer>
+    <section id="contact">
+        <span class="background-image"></span>
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div id="footer-main">
+            <span class="footer-content-box">
+                <div id="footer-logo" class="logo">
+                    <img width="235px" src="./images/logo.png" alt="">
+                </div>
+                <p><i class="fa-sharp-duotone fa-solid fa-location-dot"></i> 229/3 Hooghly West Bengal 712245</p>
+                <p><a class="view-certificate-button" href="mailto:roshansingh4385@gmail.com" target="_blank"><i class="fa-duotone fa-solid fa-phone"></i></a> +91 84205 35002</p>
+                <p><a class="view-certificate-button" href="mailto:roshansingh4385@gmail.com" target="_blank"><i class="fa-sharp-duotone fa-solid fa-envelope"></i></a> Roshansingh4385@gmail.com</p>
+            </span>
+            <span class="footer-content-box">
+                <h3>LINKS</h3>
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </span>
+        </div>
+        <div id="footer-social-links">
+            <ul class="social-links">
+                <li><a href="mailto:roshansingh4385@gmail.com" target="_blank"><i class="fa-brands fa-google fa-xl" ></i></a></li>
+                <li><a href="https://www.linkedin.com/in/roshan-kumar-singh-3122b8235/" target="_blank"> <i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                <li><a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+            </ul>
+        </div>
+        <hr>
+        <p>&copy; 2024 Roshan Singh.</p>
+    </footer>
 </body>
 </html>
