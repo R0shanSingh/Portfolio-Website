@@ -7,9 +7,8 @@
     --bg-btn: #007bff;
     --bg-btn-hover:#3c99fc;
     --bg-btn-hover-2:#0056b3;
-    --font-color-light:white;
+    --font-color-light:#f0f0f0;
     --font-color-dark:#333;
-    --card-bg:white;
 }
 
 * {
@@ -26,7 +25,7 @@ body {
 }
 
 /*----------------------/*
-    Commomn Classes
+    Common Class
 /*----------------------*/
 
 .background-image {
@@ -44,6 +43,11 @@ body {
 
 /*----------------------/*
     Header
+
+    -header: Styled with a secondary background color, shadow, and padding. 
+    -The #logo-section and #toggle-button-section are flex containers to manage the layout of the logo and navigation elements.
+    -.logo: Styles the logo container with a white background, rounded corners, and an inset shadow.
+    -#day-night: A button styled for toggling between day and night themes, with hover effects changing its background and font colors.
 /*----------------------*/
 header {
     background-color: var(--secondry-bg-color);
@@ -90,10 +94,18 @@ header {
 }
 #day-night:hover{
     background-color: var(--bg-btn-hover);
-    color: white;
+    color: var(--font-color-light);
 }
 
-/* navigation */
+/*----------------------/* 
+    navigation
+    
+    -Navigation Container (header nav): Centers the navigation menu with a maximum width of 550px.
+    -Navigation List (header nav ul): Uses flexbox to evenly space the list items.
+    -Navigation Items (header nav ul li, header nav ul li a): Removes default list styling, centers text, and sets text color to #f0f0f0 with a fixed width of 50px.
+    -Navigation Link Hover (header nav ul li a:hover): Changes the text color to var(--bg-btn-hover), increases font size to 18px, and underlines the text
+    
+/*----------------------*/
 
 header nav {
     max-width: 550px;
@@ -109,7 +121,7 @@ header nav ul li,
 header nav ul li a {
     list-style: none;
     text-decoration: none;
-    color: #f0f0f0;
+    color: var(--font-color-light);
     width: 50px;
     text-align: center;
 }
@@ -121,6 +133,14 @@ header nav ul li a:hover {
 
 /*----------------------/*
     Home section
+
+    -Container (#home): Centered text, semi-transparent black background, and white bottom border.
+    -Heading (#home h1): Large font size with bottom margin.
+    -Paragraph (#home p): Slightly smaller font size with bottom margin.
+    -Profile Image Container: Circular shape with scaling effect on hover.
+    -Profile Image: Covers the full container area with aspect ratio maintained.
+    -Social Icons: Rounded borders, neutral color, and color change on hover.
+    -Download Resume Button: Padding, background color change on hover, and rounded corners.
 /*----------------------*/
 
 #home {
@@ -204,6 +224,14 @@ header nav ul li a:hover {
 
 /*----------------------/*
     About section
+
+    -Container (#about): Centered with padding, dark background color, rounded corners, and a subtle box shadow.
+    -Heading (#about h2): Large font size with margin at the bottom.
+    -Content Layout (.about-content): Flexbox layout for centering content vertically and horizontally.
+    -Text (.about-text): Max-width for readability, with appropriate font size, margin, and line height.
+    -Read More Button (.read-more-button): Styled with padding, background color, rounded corners, and hover effect changing the background color.
+    -About Image Container (.about-image-container): Circular shape with scaling effect on hover, maintaining smooth transitions.
+    -About Image (.about-image): Covers the container fully with aspect ratio preserved.
 /*----------------------*/
 
 #about {
@@ -273,6 +301,16 @@ header nav ul li a:hover {
 
 /*----------------------/*
     Skills section
+
+    -Container (#skills): Centered with padding, a dark semi-transparent background, and a white top border.
+    -Background Image: A background image is set with a contain size, adding visual interest.
+    -Heading (#skills h2): Large font size with margin for spacing.
+    -Skills Layout (.skills-container): Flexbox layout for centering and wrapping skill items.
+    -Skill Item (.skill): Center-aligned text with margin and width constraints for consistent sizing.
+    -Skill Name (.skill-name): Styled with a larger font size and bottom margin.
+    -Progress Bar (.progress-bar): Styled with a light background, rounded corners, and hidden overflow to show progress.
+    -Progress Indicator (.progress): Animated and transition-enabled to fill the progress bar based on data attributes. Various widths are applied based on skill levels (e.g., 90%, 80%).
+    -Animation (@keyframes skill): Smooth animation of the progress bar width from 0% to the desired percentage.
 /*----------------------*/
 
 #skills {
@@ -360,34 +398,15 @@ header nav ul li a:hover {
 }
 
 /*----------------------/*
-    Service section
-/*----------------------*/
-
-#services h2 {
-    font-size: 2rem;
-    margin: 6rem auto;
-    text-align: center;
-}
-
-.service-card{
-    background: transparent !important;
-    color: white ;
-    border: 1px solid white ;
-    transition: transform 1s;
-}
-
-.service-card p{
-    margin: 1.2rem auto;
-    line-height: 1.4rem;
-}
-
-.service-card:hover {
-    -webkit-transform: scale(1.05);
-    box-shadow: 0 0 10px var(--bg-btn);
-}
-
-/*----------------------/*
     Certification section
+
+    -Heading (#certifications h2): Centered with large font size and margin for spacing.
+    -Certification Cards Container (.certification-cards): Flexbox layout for wrapping and centering cards with black text color.
+    -Certification Card (.certification-card): Light background color, rounded corners, subtle box shadow, and padding. Positioned with text aligned to the left.
+    -Certification Badge (.certification-card span): Positioned at the bottom-right with a background image, sized and positioned to fit within the card.
+    -Certification Card Titles (.certification-card h3): Styled with a larger font size and margin at the bottom.
+    -Certification Card Text (.certification-card p): Styled with a smaller font size and bottom margin.
+    -View Certificate Button (.view-certificate-button): Inline-block button with padding, background color, rounded corners, and a hover effect that changes the background color.
 /*----------------------*/
 
 #certifications h2 {
@@ -460,7 +479,53 @@ header nav ul li a:hover {
 }
 
 /*----------------------/*
+    Service section
+
+    "Service" section styled with reference to the similar classes used in the "Certification" section:
+        -Service Section Heading (#services h2): Centered text with a font size of 2rem and top and bottom margins of 6rem.
+        -Service Card (.service-card): Transparent background, white border, and white text. Includes a transition effect for scaling on hover.
+        -Service Card Text (.service-card p): Centered with margins and line-height for readability.
+        -Service Card Hover Effect: Scales up slightly (1.05) and adds a shadow effect, similar to the hover effect in the "Certification" section.
+    
+    Shared Classes with Certification Section:
+        -certification-cards class is shared with this section as the same requirement is needed accept some of the properties.
+
+/*----------------------*/
+
+#services h2 {
+    font-size: 2rem;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+.service-card{
+    background: transparent !important;
+    color: white ;
+    border: 1px solid white ;
+    transition: transform 1s;
+}
+
+.service-card p{
+    margin: 1.2rem auto;
+    line-height: 1.4rem;
+}
+
+.service-card:hover {
+    -webkit-transform: scale(1.05);
+    box-shadow: 0 0 10px var(--bg-btn);
+}
+
+/*----------------------/*
     Project section
+
+    -Heading (#projects h2): Centered with a large font size and margin for spacing.
+    -Project Card (.project-card): Light background, centered background image, rounded corners, and a box shadow. Positioned with text aligned to the left, and includes overflow hidden for content clipping.
+    -Project Content (.project-content): Positioned absolutely with padding, a semi-transparent background, and a transition effect that moves it up on hover.
+    -Hover Effect: On hover, the project content slides up to reveal details (transform: translateY(-100%)).
+    -Project Card Background Images: Each card has a unique background image, set using background-image property.
+
+    Shared Classes with Certification Section:
+        -.certification-cards is shared with this section.
 /*----------------------*/
 
 #projects h2{
@@ -529,6 +594,15 @@ header nav ul li a:hover {
 
 /*----------------------/*
     Contact section
+
+    -Container (#contact): Centered with padding, dark semi-transparent background, rounded corners, and a margin for spacing.
+    -Background Image: Background image set with background-image property.
+    -Heading (#contact h2): Centered with a large font size and margin.
+    -Contact Form (.contact-form): Centered with a maximum width and left-aligned text.
+    -Form Group (.form-group): Margin at the bottom for spacing between fields.
+    -Labels (.form-group label): Bold font and margin for spacing.
+    -Inputs and Textareas (.form-group input, .form-group textarea): Full width, padded, with rounded corners, background color, and subtle shadow. Focus state includes a border color change.
+    -Submit Button (.submit-button): Block display, full width, padded, with background color that changes on hover and rounded corners for a clickable appearance.
 /*----------------------*/
 
 #contact {
@@ -603,6 +677,17 @@ header nav ul li a:hover {
     background-color: var(--bg-btn-hover);
 }
 
+/*----------------------/*
+    Footer section
+
+    -Footer Container (footer): White text color for the footer content.
+    -Footer Main (#footer-main): Flexbox layout with wrapping for responsive design, centered alignment, dark background color, and set height.
+    -Footer Logo (#footer-logo): White background with slight transparency, margin at the bottom.
+    -Footer Paragraphs (footer p): Centered text with padding.
+    -Footer Content Box (#footer-main .footer-content-box): Heading with margin and text styled for readability.
+    -Footer Navigation (.footer-nav): Unordered list styled for no list bullets, with links styled in white and no text decoration.
+    -Footer Social Links (#footer-social-links): Dark background with padding, centered social media links with spacing and hover effects that change link color.
+/*----------------------*/
 
 footer {
     color: white;
@@ -674,6 +759,19 @@ footer p {
 
 /*----------------------/*
     Media Queries
+
+    -For screens with a maximum width of 1010px:
+        Header: Reduced height to 110px.
+        Navigation: Adjusted maximum width to 550px, with margin auto for centering.
+
+    -For screens with a maximum width of 580px:
+        Header: Further reduced height to 105px.
+        Logo Image: Set width to 180px.
+        Navigation Links: Smaller font size for better fit.
+
+    -For screens with a minimum width of 768px:
+        About Section: Changed flex direction to row, with spacing around items and alignment centered.
+        About Text: Left-aligned text with margin adjustment.
 /*----------------------*/
 
 @media(max-width:1010px){
